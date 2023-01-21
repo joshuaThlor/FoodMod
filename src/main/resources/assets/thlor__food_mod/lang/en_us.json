@@ -1,3 +1,11 @@
 {
-  "item.thlor__food_mod.stuffed_taco": "Stuffed Taco"
+  "item.thlor__food_mod.stuffed_taco": "Stuffed Taco",
+  "item.thlor__food_mod.tortilla": "Tortilla",
+  "item.thlor__food_mod.raw_taco_shell": "Raw Taco Shell",
+  "item.thlor__food_mod.flour": "Flour",
+  "item.thlor__food_mod.taco_shell": "Taco Shell",
+  "item.thlor__food_mod.sunflower_oil": "Sunflower Oil",
+  "item.thlor__food_mod.knife": "Knife",
+  "item.thlor__food_mod.cheese": "Cheese",
+  "item.thlor__food_mod.cheese_slice": "Cheese Slice"
 }

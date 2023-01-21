@@ -17,18 +17,42 @@ public class foodItems
 
     public static final RegistryObject<Item> STUFFED_TACO = ITEMS.register("stuffed_taco",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(Foods.STUFFED_TACO_EAT)));
-    public static final RegistryObject<Item> tortilla = ITEMS.register("tortilla",
+    public static final RegistryObject<Item> TORTILLA = ITEMS.register("tortilla",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
 
-    public static final RegistryObject<Item> raw_taco = ITEMS.register("raw_taco",
+    public static final RegistryObject<Item> RAW_TACO_SHELL = ITEMS.register("raw_taco_shell",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
 
+    public static final RegistryObject<Item> FLOUR = ITEMS.register("flour",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
 
+    public static final RegistryObject<Item> TACO_SHELL = ITEMS.register("taco_shell",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(Foods.TACO_SHELL)));
+
+    public static final RegistryObject<Item> SUNFLOWER_OIL = ITEMS.register("sunflower_oil",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
+
+    public static final RegistryObject<Item> KNIFE = ITEMS.register("knife",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+    public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(Foods.CHEESE)));
+
+    public static final RegistryObject<Item> CHEESE_SLICE = ITEMS.register("cheese_slice",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(Foods.CHEESE)));
     public static class Foods
     {
         public static final FoodProperties STUFFED_TACO_EAT = new FoodProperties.Builder()
-                .nutrition(10)
-                .alwaysEat()
+                .nutrition(8)
+                .saturationMod(0.7f)
+                .build();
+        public static final FoodProperties TACO_SHELL = new FoodProperties.Builder()
+                .nutrition(3)
+                .saturationMod(0.5f)
+                .build();
+        public static final FoodProperties CHEESE = new FoodProperties.Builder()
+                .nutrition(1)
+                .saturationMod(0.3f)
                 .build();
     }
 
