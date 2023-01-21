@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures":
   {
-    "layer0": "thlor__food_mod:item/taco"
+    "layer0": "thlor__food_mod:item/stuffed_taco"
   }
 }

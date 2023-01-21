@@ -1,6 +1,7 @@
 package net.dan.thlor__food_mod.item;
 
 import net.dan.thlor__food_mod.THLOR_FoodMod;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,8 +15,22 @@ public class foodItems
             DeferredRegister.create(ForgeRegistries.ITEMS, THLOR_FoodMod.MOD_ID);
 
 
-    public static final RegistryObject<Item> TACO = ITEMS.register("taco",
+    public static final RegistryObject<Item> STUFFED_TACO = ITEMS.register("stuffed_taco",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(Foods.STUFFED_TACO_EAT)));
+    public static final RegistryObject<Item> tortilla = ITEMS.register("tortilla",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
+
+    public static final RegistryObject<Item> raw_taco = ITEMS.register("raw_taco",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
+
+
+    public static class Foods
+    {
+        public static final FoodProperties STUFFED_TACO_EAT = new FoodProperties.Builder()
+                .nutrition(10)
+                .alwaysEat()
+                .build();
+    }
 
     public static void register(IEventBus eventBus)
     {
