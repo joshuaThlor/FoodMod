@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:cooked_beef"
+    },
+    "$": {
+      "item": "minecraft:bread"
+    }
+  },
+  "pattern": [
+    "$#$",
+    " $ "
+  ],
+  "result": {
+    "item": "thlor__food_mod:taco"
+  }
+}
