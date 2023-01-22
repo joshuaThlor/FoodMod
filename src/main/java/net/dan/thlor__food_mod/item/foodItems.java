@@ -19,7 +19,7 @@ public class foodItems
     public static final RegistryObject<Item> STUFFED_TACO = ITEMS.register("stuffed_taco",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(Foods.STUFFED_TACO_EAT)));
     public static final RegistryObject<Item> TORTILLA = ITEMS.register("tortilla",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).craftRemainder(Items.BUCKET)));
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
 
     public static final RegistryObject<Item> RAW_TACO_SHELL = ITEMS.register("raw_taco_shell",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
