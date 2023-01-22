@@ -4,6 +4,7 @@ import net.dan.thlor__food_mod.THLOR_FoodMod;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,7 +19,7 @@ public class foodItems
     public static final RegistryObject<Item> STUFFED_TACO = ITEMS.register("stuffed_taco",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(Foods.STUFFED_TACO_EAT)));
     public static final RegistryObject<Item> TORTILLA = ITEMS.register("tortilla",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).craftRemainder(Items.BUCKET)));
 
     public static final RegistryObject<Item> RAW_TACO_SHELL = ITEMS.register("raw_taco_shell",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
@@ -31,12 +32,11 @@ public class foodItems
 
     public static final RegistryObject<Item> SUNFLOWER_OIL = ITEMS.register("sunflower_oil",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
-
     public static final RegistryObject<Item> KNIFE = ITEMS.register("knife",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(Foods.CHEESE)));
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(64).food(Foods.CHEESE).craftRemainder(foodItems.KNIFE.get()).tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> CHEESE_SLICE = ITEMS.register("cheese_slice",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(Foods.CHEESE)));
