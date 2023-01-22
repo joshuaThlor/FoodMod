@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "thlor__food_mod:cheese"
+    },
+    "C": {
+      "item": "thlor__food_mod:knife"
+    }
+  },
+  "pattern": [
+    "   ",
+    "WC ",
+    "   "
+  ],
+  "result": {
+    "count": 2,
+    "item": "thlor__food_mod:cheese_slice"
+  }
+}

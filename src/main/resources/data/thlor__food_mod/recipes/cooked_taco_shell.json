@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "thlor__food_mod:raw_taco_shell"
+  },
+  "result": "thlor__food_mod:taco_shell"
+}

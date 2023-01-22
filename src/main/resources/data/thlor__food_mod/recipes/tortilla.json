@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "item.minecraft.potion.effect.water"
+    },
+    "F":{
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "   ",
+    "FWF",
+    " F "
+  ],
+  "result": {
+    "count": 2,
+    "item": "thlor__food_mod:tortilla"
+  }
+}

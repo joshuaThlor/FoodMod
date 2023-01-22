@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 250,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "minecraft:milk_bucket"
+  },
+
+  "result": {
+    "count": 2,
+    "item": "thlor__food_mod:cheese"
+  }
+}

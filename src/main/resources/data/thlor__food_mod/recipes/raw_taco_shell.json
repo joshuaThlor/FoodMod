@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "F": {
+      "item": "thlor__food_mod:tortilla"
+    }
+  },
+  "pattern": [
+    "   ",
+    " F ",
+    "   "
+  ],
+  "result": {
+    "count": 2,
+    "item": "thlor__food_mod:raw_taco_shell"
+  }
+}

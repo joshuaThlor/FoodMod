@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures":
+  {
+    "layer0": "thlor__food_mod:item/cheese_slice"
+  }
+}

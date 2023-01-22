@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:sunflower"
+    },
+    "B": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "pattern": [
+    "   ",
+    "WWW",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "item": "thlor__food_mod:sunflower_oil"
+  }
+}
