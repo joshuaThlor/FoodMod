@@ -40,6 +40,8 @@ public class foodItems
 
     public static final RegistryObject<Item> CHEESE_SLICE = ITEMS.register("cheese_slice",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(Foods.CHEESE)));
+    public static final RegistryObject<Item> IDAN_STICK = ITEMS.register("idan_stick",
+            () -> new Item(new Item.Properties().stacksTo(1)));
     public static class Foods
     {
         public static final FoodProperties STUFFED_TACO_EAT = new FoodProperties.Builder()
