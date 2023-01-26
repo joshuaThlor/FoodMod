@@ -7,6 +7,10 @@
   },
 
   "result": {
+    "ingredient":
+    {
+      "item": "minecraft:bucket"
+    },
     "count": 2,
     "item": "thlor__food_mod:cheese"
   }

@@ -1,11 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "W": {
-      "item": "item.minecraft.potion.effect.water"
+    "F": {
+      "item": "thlor__food_mod:flour"
     },
-    "F":{
-      "item": "minecraft:water_bucket"
+    "W":{
+      "item": "minecraft:potion"
     }
   },
   "pattern": [
@@ -14,7 +14,6 @@
     " F "
   ],
   "result": {
-    "count": 2,
     "item": "thlor__food_mod:tortilla"
   }
 }
